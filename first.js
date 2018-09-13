@@ -53,6 +53,11 @@ switch(occupation) {
 
 
 //truthy and falsy statements
+
+/*
+ undefined, null, 0 empty strings and NaN are all falsy values
+ anything that is !falsy = truthy
+ */
 var myVar;
 
 if (myVar) {
@@ -64,6 +69,14 @@ myVar = null;
 if (!myVar) {
     console.log('null is falsy so this should be printed');
 } 
+
+myVar = NaN;
+if (!myVar) {
+    console.log('told ya NaN is falsy');
+}
+
+
+
 
 
 
