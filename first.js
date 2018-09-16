@@ -124,6 +124,36 @@ arr1.shift();
 console.log(arr1);
 
 
+//indexOf operator
+var alphas = ['a', 'b', 'c', 'd', 'e'];
+console.log(alphas.indexOf('c'));
+
+//use of the ternary operator
+var temperature = 28;
+console.log(temperature > 30? 'Too Hot' : 'Ok temps');
+
+/*
+objects along with Methods
+*/
+
+var india = {
+   capital : 'New Delhi',
+   numStates : '29',
+   yearOfIndependence : 1947,
+   numUnionTerritories : '7',
+   nationalBird : 'peacock',
+   nationalAnimal : 'tiger',
+   bestStates : ['Tamil Nadu', 'Kerela', 'Andhra Pradesh'],
+   yearsSinceIndependence : function(currentYear) {
+       this.ageOfNation = currentYear - this.yearOfIndependence;
+   }
+};
+
+console.log(india);
+india.yearsSinceIndependence(2018);
+console.log(india.ageOfNation);
+
+
 
 
 
