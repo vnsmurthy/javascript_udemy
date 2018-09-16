@@ -76,6 +76,55 @@ if (!myVar) {
 }
 
 
+/*
+function statements
+*/
+
+function isTanyaNaughty() {
+    return true;
+}
+
+
+console.log('Tanya is naughty: ' + isTanyaNaughty());
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(2, 3));
+console.log(add('Best ', 'Tanya'));
+/* function
+expression
+*/
+
+var adder = function(a, b) {
+    return a + b;
+}
+
+console.log(adder(10, 20));
+console.log(adder('Sweet ', 'Arjun'));
+
+//arrays
+var arr = ['Tanya', 'Arjun', 'Vinod'];
+console.log(arr);
+//add to end of the array
+arr.push('Vidhya');
+console.log(arr);
+//add to the start of the array
+arr.unshift('Family');
+console.log(arr);
+
+
+var arr1 = [5, 10, 15];
+//remove from the end of the array
+arr1.pop();
+console.log(arr1)
+//remove from the start of the array
+arr1.shift();
+console.log(arr1);
+
+
+
 
 
 
